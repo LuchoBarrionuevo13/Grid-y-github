@@ -1,0 +1,148 @@
+#grida{
+    display: grid;
+    grid-template-areas: 
+    "headera headera footera"
+    "sectiona nava footera"
+    "sectiona nava footera";
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 33% auto 33%;
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
+}
+@media (max-width:720px){
+    #grida{
+        display: grid;
+        grid-template-areas: 
+        "headera footera"
+        "section footera"
+        "nava footera";
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 200px 200px 200px;
+    }
+}
+@media(max-width:540px){
+    #grida{
+        display: grid;
+        grid-template-areas:
+        "headera headera headera"
+        "sectiona sectiona headera"
+        "nava nava nava"
+        "footera footera footera" ;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 200px 200px 100px;
+    }
+}
+.bordeadoa{
+    border: 1px solid rgb(235, 228, 228);
+    background-color: rgb(56, 19, 12);
+    color: whitesmoke;    
+}
+#headera{
+    grid-area: headera;
+}
+.divheadera{
+    color:rgb(223, 215, 218);
+    flex-direction: column right;
+    text-align: right;
+}
+.tituloa{
+    text-align: center;
+    height: 40px;
+    font-size: 50px;
+}
+#nava{
+    grid-area: nava;
+}
+.titulonava{
+    text-align: center;
+}
+.divnava{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 38%;
+}
+.imagen1nava{
+    border-radius: 2px;
+    width: 220px;
+    transform: skewY(-5deg);
+}
+.div1nava{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 38%;
+}
+.imagen2nava{
+    border-radius: 2px;
+    width: 220px;
+    transform: skewY(-5deg);
+}
+#sectiona{
+    grid-area: sectiona;
+}
+.contenedorsectiona{
+    display: flex;
+    justify-content: space-evenly;
+}
+.izquierdasectiona{
+    display: block;
+}
+.imgsectionaiz{
+    height: 60%;
+    width: 180px;
+    border-radius: 4px;
+}
+.derechasectiona{
+    display: block;
+}
+.imgsectionade{
+    height: 60%;
+    width: 180px;
+    border-radius: 4px;
+}
+#footera{
+    grid-area: footera;
+}
+.cartafootera{
+    margin-top: 60px;
+    margin-left: 70px;
+    height: 500px;
+    width: 300px;
+    background-color:rgb(223, 215, 218);
+    border-radius: 5px;
+}
+.cartafooteraarriba{
+    background-color: rgb(56, 19, 12);
+    height: 50%;
+    border-radius: 2px;
+    margin:3px;
+}
+.imagencarta{
+    border-radius: 3px;
+    height: 210px;
+    width: 250px;
+    margin: 24px 5px 5px 20px;
+    transform: skewY(7deg);
+}
+.cartafooteraabajo{
+    display: block;
+    height: 46%;
+    background-color: rgb(56, 19, 12);
+    border-radius:4px ;
+    margin: 3px;
+}
+.titulocartafootera{
+    transition-duration:2s;
+    animation-name: titulo;
+    animation-iteration-count: infinite;
+    color:rgb(212, 84, 34);
+}
+@keyframes titulo{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

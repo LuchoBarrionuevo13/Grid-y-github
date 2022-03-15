@@ -1,0 +1,104 @@
+#gridayu {
+    display: grid;
+   grid-template-areas:
+     "nav header header"
+     "nav productos publicidad"
+     "nav productos publicidad"
+     "nav footer footer";
+   grid-template-rows: 180px 300px 100px; 
+   grid-template-columns: 20% auto 15%;
+}
+@media(max-width:720px){
+    #gridayu{
+        display: grid;
+        grid-template-areas: 
+        "nav header"
+        "nav productos"
+        "nav publicidad"
+        "nav footer";
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-template-columns: 30% 70%;
+    }
+}
+@media(max-width:540px){
+    #gridayu{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav productos"
+        "nav publicidad"
+        "footer footer";
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-template-columns: 30% 70%;
+    }
+}
+.bordeadoayu{
+   border: 1px solid rgb(235, 228, 228);
+   background-color: rgb(223, 161, 28);
+   color: whitesmoke;
+}
+#headerayu {
+    padding: 10px;
+    grid-area: header;
+ }
+ #footerayu {
+     padding: 10px;
+    grid-area: footer;
+
+ }
+ #medioayu {
+    padding: 10px;
+    grid-area: productos;
+ }
+ .sectionarribaayu{
+    display: flex;  
+    justify-content: space-evenly;   
+ }
+ .imagenarribaayu{
+     height: 200px;
+     border-radius: 3px;
+     display: flex;
+     flex-direction: column;
+ }
+ .imagenabajoayu{
+     height: 200px;
+     border-radius: 3px;
+     display: flex;
+     flex-direction: column;
+ }
+ #navayu {
+    padding: 10px;
+    grid-area: nav;
+    text-align: center;
+ }
+ #asideayu {
+    padding: 10px;
+    grid-area: publicidad;
+    text-align: center;
+ }   
+.headerayu{
+    flex-direction: column right;
+    text-align: right;
+}
+.tituloayu{
+    text-align: center;
+}
+@media (max-width: 700px) and (min-width: 400px){
+    .navbar-nav{
+        display:flex;
+        justify-content:start;
+    }
+    .col-4{
+        color:red;
+    }
+}
+@media (max-width:500px){
+    .row{
+        display:block;
+    }
+}
+@media (max-width:640px){
+    body{
+        background-color:yellow;
+    }
+}
